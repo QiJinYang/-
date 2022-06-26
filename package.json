@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-plus": "^2.2.6",
     "vue": "^3.2.8",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
@@ -40,8 +42,8 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
       "git add"
     ]
   },
