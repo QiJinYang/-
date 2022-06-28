@@ -81,7 +81,7 @@ const request = (options) => {
   service(options)
 }
 
-// 获取icode、
+// 获取icode
 function getTestICode() {
   const now = parseInt(Date.now() / 1000)
   const code = now + 'LGD_Sunday-1991'
