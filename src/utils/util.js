@@ -21,10 +21,10 @@ const checkDataType = (data) => {
 }
 
 /**
-   * 深拷贝
-   * @param {*} data
-   * @returns
-   */
+ * 深拷贝
+ * @param {*} data
+ * @returns
+ */
 const deepCopy = (data) => {
   const type = checkDataType(data)
   let params = null
